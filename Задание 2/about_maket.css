@@ -1,0 +1,135 @@
+*{
+	box-sizing: border-box; 
+	margin: 0; 
+	padding: 0; 
+	font: calc(5px + .8vw) bold times new roman serif; 
+}
+
+body{
+	display: flex; 
+	min-height: 100vh; 
+	flex-direction: column; 
+	background-image: url(pics/888.jpg);
+}
+
+header, footer{
+	background-color: rgba(175, 175, 150, .2); 
+	min-height: 6vh;
+	min-width: 100%;
+}
+
+header {
+	display: flex; 
+	justify-content: space-around; 
+}
+
+#nav{
+	margin: 1.6vh;
+}
+
+#nav > li{
+	list-style: none;
+	float: left;
+}
+
+#nav > li > a {
+	text-decoration: none; 
+	color: black;
+	background-color: rgba(132, 132, 132, .6);
+	padding: 5px; 
+	border-radius: 15px; 
+	margin: 10px 14vw; 
+}
+
+#nav > li > a:hover{
+	background-color: rgba(178, 178, 178, .9)
+}
+
+main{
+	display: flex; 
+	flex: 1; 
+	background-image: url("2.jpg");
+}
+
+article{
+	min-width: 45vw;  
+	margin: 0 auto; 
+	margin-top: 6vh; 
+	margin-bottom: 6vh; 
+	padding: 20px; 
+	background-color: rgba(255,255,255,.5);
+}
+
+article p{
+	margin: 7px;
+	text-align: justify;
+	font: calc(5px + .8vw) bold times new roman serif;
+}
+
+h1{
+	text-align: center;
+	border-bottom: 1px solid black;
+	line-height: 40px;
+	text-align: center;
+	font-size: calc(1em + 0.5vw);
+}
+
+img{
+	width: 28%;
+	margin: 20px;
+	margin-bottom: auto;
+	float: left;
+}
+
+#pic, #sidebar{
+	min-width: 22vw;
+	padding: 5vh 0vw; 
+}
+.cvet{
+	width: 24vw; 
+}
+
+.content{
+	margin-top: 15px;
+}
+
+p{
+	margin: 20px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+h2{
+	font-size: 25px;
+	margin: 0 8px !important;
+	text-align: left;
+	font: calc(1em + .2vw) bold times new roman serif;
+}
+
+.all{
+	height: 100vh;
+	margin: 0 auto;   
+	width: 70%;
+  	margin: 2vh 0;
+	max-height: 634px;
+}
+
+#music{
+	margin: 0 2vw;
+	font: calc(5px + .8vw) bold times new roman serif;
+}
+
+ul{
+	font-size: 19px;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.hobbies h2{
+	margin-left: 20px;
+}
+
+footer p{
+	text-align: right;
+	margin: 10px;
+}

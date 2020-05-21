@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+	margin: 0; 
+	padding: 0; 
+	font: calc(5px + .8vw) bold times new roman serif; 
+}
+
+body{
+	display: flex; 
+	min-height: 100vh;
+	flex-direction: column;
+	background-image: url("pics/z4UicLdmVoU.jpg");
+}
+
+header, footer{
+	background-color: rgba(175, 175, 150, .1);
+	min-height: 6vh;
+	min-width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container{
+	width: 80%;
+	max-width: 1080px;
+	margin: 1vh	 auto;
+}
+
+.menu{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+}
+
+a,.sub_menu{
+	white-space: nowrap;
+}
+
+a,.menu,.sub_menu{
+	margin: 0.5px;
+	color: black;
+	background-color: rgba(132, 132, 132, .6);
+	padding: .2em 2em;
+	border-radius: 14px;
+}
+
+a:hover,.menu:hover,.sub_menu:hover{
+	background-color: rgba(178, 178, 178, .9);
+}
+
+.menu:hover .sub_menu{
+	display: block;
+}
+
+.sub_inner{
+	top: 100%;
+	width: 4.5%;
+}
+
+.sub_menu{
+	display: none;
+	float: left;
+}
+
+.sub_menu:hover .sub{
+	display: block;
+}
+
+.sub_sub_inner{
+	left: 100%;
+	display: block;
+	top: 0;
+}
+
+.sub{
+	display: none;
+}
+
+.menu, .sub_menu{
+	position: relative;
+}
+
+.sub_inner, .sub_sub_inner{
+	position: absolute;
+}
+
+.sub, .sub_menu, .container{
+	text-align: center;
+}
+
+#nav{
+	margin: 1.6vh;
+}
+
+#nav > li{
+	list-style: none;
+	float: left;
+}
+
+#nav > li > a{
+	text-decoration: none; 
+	color: black;
+	background-color: rgba(132, 132, 132, .6);
+	padding: 5px; 
+	border-radius: 15px; 
+	margin: 10px 14vw;
+}
+
+main{
+	display: flex; 
+	flex: 1; 
+	background-image: url("2.jpg");
+}
+
+article{
+	min-width:30vw;
+	margin: 0 auto;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+	padding: 20px;
+	background-color: rgba(255,255,255,.5);
+}
+
+article p{
+	margin: 10px;
+	text-align: center;
+}
+
+#pic, #sidebar{
+	min-width: 35vw;
+	padding: 1.8vh 2vw;
+}
+
+.cvet{
+	width: 28vw;
+}
+
+footer p{
+	text-align: right;
+	margin: 10px;
+}
+
+h1{
+	text-align: center;
+	font-size: 25px;
+}
+
+em{
+	font-style: italic;
+	display: block;
+	text-align: right;
+}

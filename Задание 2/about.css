@@ -1,0 +1,48 @@
+body{
+	background-image: url(pics/888.jpg);
+}
+
+h1{
+	text-align: center;
+	border-bottom: 1px solid black;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+img{
+	width: 28%;
+	margin: 20px;
+	margin-bottom: auto;
+	float: left;
+}
+
+.content{
+	margin-top: 15px;
+}
+
+p{
+	margin: 20px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+h2{
+	font-size: 25px;
+}
+
+.all{
+	height: 100vh/*709px*/;
+	margin: 0 auto;            
+	width: 70%;
+  	/*margin-bottom: 25px;*/
+}
+
+ul{
+	font-size: 19px;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.hobbies h2{
+	margin-left: 20px;
+}

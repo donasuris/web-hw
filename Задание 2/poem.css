@@ -1,0 +1,19 @@
+.poem{
+	width: 350px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+h2{
+	width: 100px;
+	margin: auto;
+}
+
+body{
+	margin: 100px;
+}
+
+.name{
+	text-align: right;
+	margin-right: 20px;
+}
