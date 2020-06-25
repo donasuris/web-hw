@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+	<title>Задание 4.3</title>
+	<script src="../js/tools.js"></script>
+	<script src="../js/three.js"></script>
+	<script>
+		function generate() {
+			getArray(64, -99, 99).forEach((el, index) => document.getElementById(`a${index}`).value = el);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="text">
+		Задана матрица А(8,8). Упорядочить элементы в каждой строке в порядке возрастания их значений
+	</div>
+	<div id="input">
+		<input id="a0" type="number" value="1" style="width: 40px">
+		<input id="a1" type="number" value="1" style="width: 40px">
+		<input id="a2" type="number" value="1" style="width: 40px">
+		<input id="a3" type="number" value="1" style="width: 40px">
+		<input id="a4" type="number" value="1" style="width: 40px">
+		<input id="a5" type="number" value="1" style="width: 40px">
+		<input id="a6" type="number" value="1" style="width: 40px">
+		<input id="a7" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a8" type="number" value="1" style="width: 40px">
+		<input id="a9" type="number" value="1" style="width: 40px">
+		<input id="a10" type="number" value="1" style="width: 40px">
+		<input id="a11" type="number" value="1" style="width: 40px">
+		<input id="a12" type="number" value="1" style="width: 40px">
+		<input id="a13" type="number" value="1" style="width: 40px">
+		<input id="a14" type="number" value="1" style="width: 40px">
+		<input id="a15" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a16" type="number" value="1" style="width: 40px">
+		<input id="a17" type="number" value="1" style="width: 40px">
+		<input id="a18" type="number" value="1" style="width: 40px">
+		<input id="a19" type="number" value="1" style="width: 40px">
+		<input id="a20" type="number" value="1" style="width: 40px">
+		<input id="a21" type="number" value="1" style="width: 40px">
+		<input id="a22" type="number" value="1" style="width: 40px">
+		<input id="a23" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a24" type="number" value="1" style="width: 40px">
+		<input id="a25" type="number" value="1" style="width: 40px">
+		<input id="a26" type="number" value="1" style="width: 40px">
+		<input id="a27" type="number" value="1" style="width: 40px">
+		<input id="a28" type="number" value="1" style="width: 40px">
+		<input id="a29" type="number" value="1" style="width: 40px">
+		<input id="a30" type="number" value="1" style="width: 40px">
+		<input id="a31" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a32" type="number" value="1" style="width: 40px">
+		<input id="a33" type="number" value="1" style="width: 40px">
+		<input id="a34" type="number" value="1" style="width: 40px">
+		<input id="a35" type="number" value="1" style="width: 40px">
+		<input id="a36" type="number" value="1" style="width: 40px">
+		<input id="a37" type="number" value="1" style="width: 40px">
+		<input id="a38" type="number" value="1" style="width: 40px">
+		<input id="a39" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a40" type="number" value="1" style="width: 40px">
+		<input id="a41" type="number" value="1" style="width: 40px">
+		<input id="a42" type="number" value="1" style="width: 40px">
+		<input id="a43" type="number" value="1" style="width: 40px">
+		<input id="a44" type="number" value="1" style="width: 40px">
+		<input id="a45" type="number" value="1" style="width: 40px">
+		<input id="a46" type="number" value="1" style="width: 40px">
+		<input id="a47" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a48" type="number" value="1" style="width: 40px">
+		<input id="a49" type="number" value="1" style="width: 40px">
+		<input id="a50" type="number" value="1" style="width: 40px">
+		<input id="a51" type="number" value="1" style="width: 40px">
+		<input id="a52" type="number" value="1" style="width: 40px">
+		<input id="a53" type="number" value="1" style="width: 40px">
+		<input id="a54" type="number" value="1" style="width: 40px">
+		<input id="a55" type="number" value="1" style="width: 40px">
+		
+		<br>
+		
+		<input id="a56" type="number" value="1" style="width: 40px">
+		<input id="a57" type="number" value="1" style="width: 40px">
+		<input id="a58" type="number" value="1" style="width: 40px">
+		<input id="a59" type="number" value="1" style="width: 40px">
+		<input id="a60" type="number" value="1" style="width: 40px">
+		<input id="a61" type="number" value="1" style="width: 40px">
+		<input id="a62" type="number" value="1" style="width: 40px">
+		<input id="a63" type="number" value="1" style="width: 40px">
+		
+		<br>
+		<br>
+		
+		<button onclick="generate();">Заполнить</button>
+		<button onclick="calc();">Решить</button>
+	</div>
+	<div id="answer">
+
+	</div>
+	<div>
+		<a href="../index.html">Назад</a>
+	</div>
+</body>
+</html>

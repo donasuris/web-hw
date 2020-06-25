@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<title>Задание 4.4</title>
+	<script src="../js/tools.js"></script>
+	<script src="../js/four.js"></script>
+</head>
+
+<body>
+	<div id="text">
+		При выполнении задания необходимо написать 3 функции:<br>
+		<ul>
+			<li>Функция getRandomInt(min, max), которая принимает параметры min и max и возвращает случайное целое число между min (включительно) и max (не включая max)</li>
+			<li>Функция getArray(n), которая принимает размерность n и возвращает массив со сгенерированными значениями через функцию getRandomInt</li>
+			<li>Функция getResultArray(a), которая принимать исходный массив a и возвращать отсортированный массив</li>
+		</ul>
+Даны числа a1..a(n*n), получить квадратную матрицу порядка n, элементами которой являются числа a1..a(n*n), расположенные в ней по схеме:<br>
+<img src="../img/sh.png">
+	</div>
+	<div id="input"><pre>
+N:	<input id="n" type="number" name="n" value="10">
+От:	<input id="min" type="number" name="min" value="1">
+До:	<input id="max" type="number" name="max" value="100">
+	</pre>
+		<button onclick="calc();">Решить</button>
+	</div>
+	<div id="answer">
+
+	</div>
+	<div>
+		<a href="../index.html">Назад</a>
+	</div>
+</body>
+</html>
